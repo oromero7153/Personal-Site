@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
+  background-color: #ffffff;
 }
 
 header {
@@ -52,7 +52,20 @@ nav {
   transform: scale(1.1);
 }
 
-/* .active {
+.nav__links li a.active {
   color: orangered;
-  font-weight: bold;
-} */
+  border-style: solid;
+  border-color: orangered;
+  padding: 2px;
+  border-width: 1px;
+}
+img {
+  max-width: 200%;
+  height: 450px;
+  object-fit: contain;
+  z-index: -1;
+}
+h2 {
+  font-family: "Roboto Flex", sans-serif;
+  z-index: 1;
+}
