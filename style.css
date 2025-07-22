@@ -42,6 +42,7 @@ nav {
 
 .nav__links li a {
   text-decoration: none;
+  list-style: none;
   /* transition: all 0.3s ease 0s; */
   color: #ffffff;
   background-color: #000000;
@@ -59,13 +60,32 @@ nav {
   padding: 2px;
   border-width: 1px;
 }
+
 img {
-  max-width: 200%;
-  height: 450px;
-  object-fit: contain;
-  z-index: -1;
+  width: 100%;
+  height: 350px;
+  opacity: 80%;
+  object-fit: cover;
 }
-h2 {
+
+.photo__category-link {
+  text-decoration: none;
   font-family: "Roboto Flex", sans-serif;
-  z-index: 1;
+  font-style: bold;
+  font-size: 450%;
+  font-weight: 900px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #000000;
+}
+
+.photo__category-link:hover {
+  color: orangered;
+}
+.photo__category:hover {
+  opacity: 50%;
 }

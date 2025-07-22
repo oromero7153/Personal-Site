@@ -1,7 +1,6 @@
 "use strict";
 
-// Add active state functionality to navigation links
-// DOMContentLoaded ensures the DOM is fully loaded before running the script
+// Add active state functionality to navigation links. DOMContentLoaded ensures the DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
   // Get all navigation links
   const navLinks = document.querySelectorAll(".nav__links li a");
