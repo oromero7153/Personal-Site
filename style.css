@@ -34,7 +34,8 @@ nav {
 
 .nav__links {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  align-items: flex-end;
   gap: 25px;
   margin-top: 10px;
   background-color: #000000;

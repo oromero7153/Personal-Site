@@ -3,7 +3,7 @@
 // Add active state functionality to navigation links. DOMContentLoaded ensures the DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
   // Get all navigation links
-  const navLinks = document.querySelectorAll(".nav__links li a");
+  const navLinks = document.querySelectorAll(".nav__links li a img");
 
   // Add click event listener to each nav link
   navLinks.forEach((link) => {
