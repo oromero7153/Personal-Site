@@ -10,24 +10,25 @@
   <body>
    <div class="container">
     <header>
+      <a href="/" class="logo">
         <h1 class="title">oscar<br> romero</h1>
+      </a>
     <nav>
         <ul class="nav__links">
-          <li><a class="active" href="">Home</a></li>
+          <li><a class="active" href="/">Home</a></li>
           <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Graphic Design Projects</a></li>
             <li><a href="#photography">Photography</a></li>
+            <li><a href="#projects">Graphic Design Projects</a></li>
             <li><a href="#built">Sites</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     </header>
   </div>
-  <div class="photo__category">
-    <img src="./photos/japan-sake.JPG" alt="Japanese Sake Barrels" width="1000" height="200"/>
-    <a class="photo__category-link" href="#photography">Photography</a>
-    <!-- <h2 class="photo__category">Photography</h2>
-  </div> -->
+  <a class="photo__category" href="#photography">
+    <img id="sake" src="./photos/japan-sake.JPG" alt="Japanese Sake Barrels" width="1000" height="200"/>
+    <div class="photo__category-link">Photography</div>
+  </a>
   </body>
 </body>
-</html>`
+</html>

@@ -12,11 +12,14 @@ header {
   background-color: #000000;
   display: flex;
   justify-content: space-between; /* the space-between alignment distributes elements evenly */
-  padding: 10px 10%;
+  padding: 10px 5%;
   align-items: center;
 }
-
-h1 {
+.logo {
+  text-decoration: none;
+  background-color: #000000;
+}
+.title {
   font-family: "Roboto Flex", sans-serif;
   font-size: 25px;
   font-weight: 900px;
@@ -62,31 +65,34 @@ nav {
   border-width: 1px;
 }
 
-img {
+#sake {
   width: 100%;
   height: 350px;
-  opacity: 80%;
+  opacity: 75%;
   object-fit: cover;
 }
-
+.photo__category {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 .photo__category-link {
+  position: absolute;
+  bottom: 8px;
+  left: 20%;
   text-decoration: none;
   font-family: "Roboto Flex", sans-serif;
   font-style: bold;
   font-size: 450%;
-  font-weight: 900px;
-  position: absolute;
-  top: 50%;
-  left: 25%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   background-color: transparent;
-  color: #000000;
+  color: black;
 }
 
-.photo__category-link:hover {
-  color: orangered;
-}
 .photo__category:hover {
   opacity: 50%;
+}
+.photo__category:hover .photo__category-link {
+  color: orangered;
 }
