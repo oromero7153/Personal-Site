@@ -3,7 +3,7 @@
 // Add active state functionality to navigation links. DOMContentLoaded ensures the DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
   // Get all navigation links
-  let navLinks = document.querySelectorAll("li a");
+  const navLinks = document.querySelectorAll(".nav__links a");
 
   // Add click event listener to each nav link
   navLinks.forEach((link) => {
@@ -16,5 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add active class to the clicked link
       this.classList.add("active");
     });
+  });
+});
+
+const catLinks = document.querySelectorAll(".category a");
+
+// Add click event listener to each nav link
+catLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    // Remove active class from all nav links
+    catLinks.forEach((catLink) => {
+      catLink.classList.remove("active");
+    });
+
+    // Add active class to the clicked link
+    this.classList.add("active");
   });
 });
