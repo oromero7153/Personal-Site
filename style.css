@@ -55,6 +55,9 @@ nav {
 
 .nav__links li:hover {
   transform: scale(1.1);
+  opacity: 50%;
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav__links li a.active {
@@ -65,34 +68,41 @@ nav {
   border-width: 1px;
 }
 
-#sake {
+.container {
+  display: grid;
+  height: 350px;
+}
+
+#sake,
+#shirt {
   width: 100%;
   height: 350px;
-  opacity: 75%;
+  opacity: 85%;
   object-fit: cover;
 }
-.photo__category {
+.category {
   position: relative;
   text-align: center;
   color: white;
 }
-.photo__category-link {
+.category-link {
   position: absolute;
   bottom: 8px;
-  left: 20%;
+  left: 10%; /* Position where the first letter starts */
+  transform: translate(0, -50%); /* Remove the -50% horizontal shift */
+  padding-left: 0;
   text-decoration: none;
   font-family: "Roboto Flex", sans-serif;
-  font-style: bold;
+  font-weight: bold;
   font-size: 450%;
-  transform: translate(-50%, -50%);
   text-transform: uppercase;
   background-color: transparent;
   color: black;
 }
 
-.photo__category:hover {
+.category:hover {
   opacity: 50%;
 }
-.photo__category:hover .photo__category-link {
+.category:hover .category-link {
   color: orangered;
 }
